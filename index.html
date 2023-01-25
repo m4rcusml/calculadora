@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Calculadora Online</h1>
+    </header>
+    <section class="container">
+        <div class="display">
+            <p id="res"></p>
+        </div>
+        <div class="teclas">
+            <div class="operacoes" id="topo">
+                <button type="button" class="tecla op">
+                    <a href="#como-usar" id="info">
+                        <span>?</span>
+                    </a>
+                </button>
+                <button type="button" class="tecla op" id="dividir" onclick="inserir('/', true)"> / </button>
+                <button type="button" class="tecla op" id="multiplicar" onclick="inserir('*', true)"> x </button>
+                
+            </div>
+
+            <div class="num">
+                <button type="button" class="tecla" id="nove" onclick="inserir('9')"> 9 </button>
+                <button type="button" class="tecla" id="oito" onclick="inserir('8')"> 8 </button>
+                <button type="button" class="tecla" id="sete" onclick="inserir('7')"> 7 </button>
+                <button type="button" class="tecla" id="seis" onclick="inserir('6')"> 6 </button>
+                <button type="button" class="tecla" id="cinco" onclick="inserir('5')"> 5 </button>
+                <button type="button" class="tecla" id="quatro" onclick="inserir('4')"> 4 </button>
+                <button type="button" class="tecla" id="tres" onclick="inserir('3')"> 3 </button>
+                <button type="button" class="tecla" id="dois" onclick="inserir('2')"> 2 </button>
+                <button type="button" class="tecla" id="um" onclick="inserir('1')"> 1 </button>
+                <button type="button" class="tecla" id="limparTudo" onclick="limpar()"> C </button>
+                <button type="button" class="tecla" id="zero" onclick="inserir('0')"> 0 </button>
+                <button type="button" class="tecla" id="virgula" onclick="inserir('.', true)"> , </button>
+            </div>
+
+            <div class="operacoes" id="lado">
+                <button type="button" class="tecla" onclick="apagar()">
+                    <i class="material-icons">backspace</i>
+                </button>
+                <button type="button" class="tecla op" id="subtrair" onclick="inserir('-')"> - </button>
+                <button type="button" class="tecla op" id="somar" onclick="inserir('+')"> + </button>
+                <button type="button" class="tecla op" id="calcular" onclick="calcular()"> = </button>
+            </div>
+        </div>
+    </section>
+    <section class="descricao">
+        <h2 class="subtitulo">Explicações e tal</h2>
+        <p class="paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit fugit odit similique praesentium ullam error autem atque possimus sunt illo? Et error est in reprehenderit illum quam commodi explicabo aut!</p>
+        <h2 id="como-usar">Como usar?</h2>
+        <p class="paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis ullam praesentium dolore recusandae placeat aut quam, illum sequi laboriosam! Similique iusto recusandae provident enim exercitationem quam deserunt autem odio velit.</p>
+    </section>
+    <footer>
+        <p>Feito pelo Pisca <sub>(ML)</sub></p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
